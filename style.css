@@ -1,0 +1,38 @@
+@font-face {
+	font-family: mijaRegular;
+	src: url("fonts/Mija W03 Regular.ttf");
+}
+
+@font-face {
+	font-family: mijaBold;
+	src: url("fonts/Mija W03 Bold.ttf");
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+
+	background: #d33a2c;
+	display: flex;
+	align-items: center;
+}
+
+img {
+	height: 3.5em;
+	background: black;
+	margin-top: 5px;
+}
+
+input {
+	font-family: mijaBold;
+	display: block;
+	padding: 10px;
+	font-size: 1.3rem;
+	border-radius: 10px;
+}
