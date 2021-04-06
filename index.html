@@ -9,33 +9,70 @@
 	<title>Smashing Magazine - For Web Designers And Developers</title>
 </head>
 <body>
-	<nav class="flex">
-		<div class="flex" id="nav-left-side">
-		
-			<a href="#" id="logo-link" class="relative">
-				&nbsp;
-				<picture>
-					<img src="images/logo.svg" id="logo">
-				</picture>
-			</a>
+	<nav>
+		<div id="nav-divider" class="flex">
+			<div class="flex" id="nav-left-side">
 			
-			<a href="#" class="nav-link" id="menu-2">Articles</a>
-			<a href="#" class="nav-link" id="menu-3">Guides</a>
-			<a href="#" class="nav-link" id="menu-4">Books</a>
-			<a href="#" class="nav-link" id="menu-5">Workshops</a>
-			<a href="#" class="nav-link" id="menu-6">Membership</a>
+				<a href="#" id="logo-link" class="relative">
+					&nbsp;
+					<picture>
+						<img src="images/logo.svg" id="logo">
+					</picture>
+				</a>
+				
+				<a href="#" class="nav-link" id="menu-2">Articles</a>
+				<a href="#" class="nav-link" id="menu-3">Guides</a>
+				<a href="#" class="nav-link" id="menu-4">Books</a>
+				<a href="#" class="nav-link" id="menu-5">Workshops</a>
+				<a href="#" class="nav-link" id="menu-6">Membership</a>				
+
+				<button type="button" id="nav-btn">
+					<span>More</span>
+					<div>
+						<img src="images/menu-cat.svg" id="more-cat" class="btn-cat">
+						<img src="images/menu-cat-dancing.svg" id="less-cat" class="btn-cat hidden">
+					</div>
+					<i class="fa fa-times hidden" id="nav-btn-times-icon"></i>
+				</button>
+			</div>
 			
-			
-			<button type="button" id="nav-btn">
-				<span>More</span>
-				<img src="images/menu-cat.svg" class="btn-cat">
-				<i class="fa fa-times hidden" id="nav-btn-times-icon"></i>
-			</button>
+			<div class="relative" id="search-container">
+				<i class="fa fa-search" id="search-icon"></i>
+				<input type="text" placeholder="Search articles...">
+			</div>
 		</div>
 		
-		<div class="relative" id="search-container">
-			<i class="fa fa-search" id="search-icon"></i>
-			<input type="text" placeholder="Search articles...">
+		<div>
+			<div class="flex hidden" id="mobile-options">
+				<div>
+					<ul>
+						<li><a href="#">Articles</a></li>
+						<li><a href="#">Guides</a></li>
+						<li><a href="#">Books</a></li>
+						<li><a href="#">Workshops</a></li>					
+					</ul>
+				</div>
+				
+				<div>
+					<ul>
+						<li><a href="#">Membership</a></li>
+						<li><a href="#">Job Board</a></li>
+						<li><a href="#">Newsletter</a></li>
+						<li><a href="#">Podcasts</a></li>					
+					</ul>			
+				</div>
+				
+				<div>
+					<ul>
+						<li><a href="#">Write for us</a></li>
+						<li><a href="#">Advertise with us</a></li>				
+					</ul>				
+				</div>
+			</div>
+			
+			<div>
+				sdfsdfdfsf
+			</div>
 		</div>
 	</nav>	
 
