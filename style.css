@@ -8,6 +8,22 @@
 	src: url("fonts/Mija W03 Bold.ttf");
 }
 
+.relative {
+	position: relative;
+}
+
+.flex {
+	display: flex;
+}
+
+.hidden {
+	display: none;
+}
+
+a {
+	text-decoration: none;
+}
+
 *,
 *::before,
 *::after {
@@ -17,22 +33,73 @@
 }
 
 nav {
-
 	background: #d33a2c;
-	display: flex;
+	align-items: center;
+	font-family: mijaBold;
+}
+
+#logo {
+	height: 3.5em;
+	margin-top: 5px;
+	background: black;
+}
+
+
+input {
+	display: block;
+	padding: 10px 10px 10px 35px;
+	font-size: 1.3rem;
+	border-radius: 10px;
+	font-family: mijaBold;	
+	outline: none;	
+}
+
+#nav-left-side {
 	align-items: center;
 }
 
-img {
-	height: 3.5em;
-	background: black;
-	margin-top: 5px;
+input:focus {
+	border: 2px dotted black;
 }
 
-input {
-	font-family: mijaBold;
+#search-icon {
+	position: absolute;
+	top: 21%;
+	left: 10px;
+	color: #d33a2c;
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+
+#logo-link {
 	display: block;
-	padding: 10px;
-	font-size: 1.3rem;
-	border-radius: 10px;
+}
+
+#nav-btn {
+	background-color: rgba(0,0,0,.2);
+	font-family: inherit;
+	color: white;
+	border: 0;
+	border-radius: 8px;
+	padding: 7px;
+	font-size: 1.2rem;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	border: 3px solid rgba(168, 46, 35);
+	outline: none;
+
+}
+
+#nav-btn:focus {
+	border: 3px dotted black;
+}
+
+#nav-btn:hover {
+	background-color: rgba(0,0,0,.5);
+}
+
+.btn-cat {
+	height: 1.5rem;
 }

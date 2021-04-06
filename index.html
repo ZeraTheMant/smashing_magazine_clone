@@ -4,23 +4,31 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">	
 	<title>Smashing Magazine - For Web Designers And Developers</title>
 </head>
 <body>
-	<nav>
-		<div>
-			<a href="#">
+	<nav class="flex">
+		<div class="flex" id="nav-left-side">
+			<a href="#" id="logo-link">
 				<picture>
-					<img src="images/logo.svg">
+					<img src="images/logo.svg" id="logo">
 				</picture>
+
 			</a>
+			<button type="button" id="nav-btn">
+				<span>More</span>
+				<img src="images/menu-cat.svg" class="btn-cat">
+				<i class="fa fa-times hidden" id="nav-btn-times-icon"></i>
+			</button>
 		</div>
 		
-		<div>
+		<div class="relative">
+			<i class="fa fa-search" id="search-icon"></i>
 			<input type="text" placeholder="Search articles...">
 		</div>
-	</nav>
+	</nav>	
 
 	<script src="index.js"></script>
 </body>
