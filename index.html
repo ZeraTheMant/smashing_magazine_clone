@@ -11,12 +11,21 @@
 <body>
 	<nav class="flex">
 		<div class="flex" id="nav-left-side">
-			<a href="#" id="logo-link">
+		
+			<a href="#" id="logo-link" class="relative">
+				&nbsp;
 				<picture>
 					<img src="images/logo.svg" id="logo">
 				</picture>
-
 			</a>
+			
+			<a href="#" class="nav-link" id="menu-2">Articles</a>
+			<a href="#" class="nav-link" id="menu-3">Guides</a>
+			<a href="#" class="nav-link" id="menu-4">Books</a>
+			<a href="#" class="nav-link" id="menu-5">Workshops</a>
+			<a href="#" class="nav-link" id="menu-6">Membership</a>
+			
+			
 			<button type="button" id="nav-btn">
 				<span>More</span>
 				<img src="images/menu-cat.svg" class="btn-cat">
@@ -24,7 +33,7 @@
 			</button>
 		</div>
 		
-		<div class="relative">
+		<div class="relative" id="search-container">
 			<i class="fa fa-search" id="search-icon"></i>
 			<input type="text" placeholder="Search articles...">
 		</div>
