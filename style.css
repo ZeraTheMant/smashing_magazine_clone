@@ -138,6 +138,10 @@ input:focus {
 	margin-top: 5px;
 }
 
+#desktop-options {
+	background: blue;
+}
+
 #mobile-options {
 	justify-content: space-around;
 	padding: 10px 0 60px 0;
