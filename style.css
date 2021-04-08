@@ -154,13 +154,11 @@ input:focus {
     width: 0px;
     height: 0px;
     position: absolute;
-
-
     border-top: 10px solid transparent;
     border-bottom: 10x solid transparent; 
-    border-right: 20px solid red; 
-
+    border-right: 30px solid red; 
 	top: -10px;
+	transform: rotate(90deg);
 }
 
 #desktop-options:after {
@@ -168,13 +166,11 @@ input:focus {
     width: 0px;
     height: 0px;
     position: absolute;
-
-
     border-top: 10px solid transparent;
     border-bottom: 10x solid transparent; 
-    border-right: 20px solid blue; 
-
+    border-right: 30px solid blue; 
 	top: -10px;
+	transform: scaleX(-1);
 }
 
 #desktop-options ul li a {
