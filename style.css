@@ -164,6 +164,12 @@ input:focus {
 	display: none;
 }
 
+#mobile-membership-1,
+#mobile-wfu-1 {
+	display: none;
+}
+
+
 @media screen and (min-width: 500px) {
 	#nav-btn {
 		display: flex;
@@ -179,6 +185,17 @@ input:focus {
 	#menu-2 {
 		display: block;
 		margin-left: 50px;
+	}
+	
+	#mobile-membership-1,
+	#mobile-wfu-1 {
+		display: block;
+	}
+	
+	#mobile-articles,
+	#mobile-membership-2,
+	#mobile-wfu-2 {
+		display: none;
 	}
 	
 	#nav-btn {
