@@ -139,13 +139,47 @@ input:focus {
 }
 
 #desktop-options {
-	background: blue;
+	background: white;
 	position: absolute;
 	top: 70px;
 	left: -20px;
 	border-radius: 5px;
 	padding: 10px;
 	white-space: nowrap;
+	box-shadow: 5px 10px 8px 10px #888888;
+}
+
+#desktop-options:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+
+
+    border-top: 10px solid transparent;
+    border-bottom: 10x solid transparent; 
+    border-right: 20px solid red; 
+
+	top: -10px;
+}
+
+#desktop-options:after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+
+
+    border-top: 10px solid transparent;
+    border-bottom: 10x solid transparent; 
+    border-right: 20px solid blue; 
+
+	top: -10px;
+}
+
+#desktop-options ul li a {
+	color: #d33a2c;
+	font-size: 1.2rem;
 }
 
 #mobile-options {
@@ -191,7 +225,7 @@ input:focus {
 	#menu-2 {
 		display: block;
 		margin-left: 50px;
-	}
+	}	
 	
 	#mobile-membership-1,
 	#mobile-wfu-1 {
@@ -212,24 +246,40 @@ input:focus {
 @media screen and (min-width: 780px) {
 	#menu-3 {
 		display: block;
+	}	
+	
+	#desktop-guides {
+		display: none;
 	}
 }
 
 @media screen and (min-width: 880px) {
 	#menu-4 {
 		display: block;
+	}	
+	
+	#desktop-books {
+		display: none;
 	}
 }
 
 @media screen and (min-width: 980px) {
 	#menu-5 {
 		display: block;
+	}	
+	
+	#desktop-workshop {
+		display: none;
 	}
 }
 
 @media screen and (min-width: 1080px) {
 	#menu-6 {
 		display: block;
+	}
+	
+	#desktop-membership {
+		display: none;
 	}
 }
 
