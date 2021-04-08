@@ -140,6 +140,12 @@ input:focus {
 
 #desktop-options {
 	background: blue;
+	position: absolute;
+	top: 70px;
+	left: -20px;
+	border-radius: 5px;
+	padding: 10px;
+	white-space: nowrap;
 }
 
 #mobile-options {
