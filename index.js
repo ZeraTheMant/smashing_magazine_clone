@@ -48,5 +48,17 @@ const navBtn = {
 	}
 }
 
+/*function centerPromoImg() {
+	const currentWidth = Number(promoStyles.getPropertyValue('width').slice(0, -2));
+	const centeredWidth = (currentWidth / 2) - 125;
+	promoImgHolder.style.left = centeredWidth + "px";
+}*/
+
 navBtn.domElement.addEventListener('click', navBtn.toggleEvent);
 window.addEventListener('resize', navBtn.screenResizeSetup);
+
+/*const promoImgHolder = document.querySelector("#promo-img-holder");
+const promo = document.querySelector("#promo");
+let promoStyles = window.getComputedStyle(promo);
+window.addEventListener('resize', centerPromoImg);
+centerPromoImg();*/
