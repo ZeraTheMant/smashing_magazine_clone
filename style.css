@@ -319,6 +319,7 @@ section {
 	width: 100%;
 	z-index: 1;
 	text-align: center;
+
 }
 
 #promo h1 {
@@ -402,6 +403,40 @@ section {
 	margin-top: 90px;
 }
 
+#left-guide {
+	background: rgb(241, 253, 248);
+}
+
+#middle-guide {
+	background: rgb(254, 241, 240);
+}
+
+#right-guide {
+	background: rgb(251, 236, 249);
+}
+
+.small-header {
+	font-size: 0.7rem;
+}
+
+.guide h2 a {
+	font-family: mijaBold;
+	text-decoration: underline;
+}
+
+#left-guide h2 a {
+	color: #19a972;
+}
+
+#left-guide-btn {
+	background: #19a972;
+}
+
+#guides-section {
+	display: block;
+}
+
+
 
 @media screen and (min-width: 500px) {
 	#nav-btn {
@@ -453,7 +488,8 @@ section {
 		margin-top: 20px;
 	}
 	
-	#top-section {
+	#top-section,
+	#guides-section	{
 		padding: 0 70px;
 	}
 
@@ -476,6 +512,11 @@ section {
 	#nav-btn {
 		margin-left: 0px;
 	}
+	
+	#guides-section {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
 }
 
 @media screen and (min-width: 780px) {
@@ -485,7 +526,7 @@ section {
 	
 	#desktop-guides {
 		display: none;
-	}
+	}	
 }
 
 @media screen and (min-width: 880px) {
