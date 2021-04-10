@@ -205,6 +205,61 @@ input:focus {
 	display: none;
 }
 
+.article-author {
+	transform: rotate(-20deg);
+	border-radius: 10px;
+	border: 5px solid #d33a2c;
+	height: 150px;
+	cursor: pointer;
+}
+
+.article-author:hover {
+	transform: initial;
+	transition: 0.3s
+}
+
+#top-section article:first-child {
+	margin-top: 0;
+	background: red;
+}
+
+.wrote {
+	color: #999;
+}
+
+.grey {
+	color: #666;
+}
+
+.georgia {
+	font-family: Georgia;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.mija-link {
+	text-decoration: underline;
+	font-family: mijaBold;
+	font-size: 1.2rem;
+}
+
+.author-link {
+	color: #d33a2c;
+}
+
+article h1 {
+	font-family: mijaBold;
+	font-size: 2.5rem;
+	margin: 15px 0 10px 0;
+}
+
+article h1 a ,
+.tag {
+	color: #333;
+}
+
 
 @media screen and (min-width: 500px) {
 	#nav-btn {
@@ -218,6 +273,11 @@ input:focus {
 }
 
 @media screen and (min-width: 680px) {
+	#top-section article:first-child {
+		margin-top: 70px;
+		background: white;
+	}
+
 	#menu-2 {
 		display: block;
 		margin-left: 50px;
