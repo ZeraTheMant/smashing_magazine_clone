@@ -209,7 +209,7 @@ input:focus {
 	transform: rotate(-20deg);
 	border-radius: 10px;
 	border: 5px solid #d33a2c;
-	height: 150px;
+	height: 130px;
 	cursor: pointer;
 }
 
@@ -218,9 +218,12 @@ input:focus {
 	transition: 0.3s
 }
 
+article img {
+	margin-left: 20px;
+}
+
 #top-section article:first-child {
 	margin-top: 0;
-	background: red;
 }
 
 .wrote {
@@ -242,7 +245,6 @@ input:focus {
 .mija-link {
 	text-decoration: underline;
 	font-family: mijaBold;
-	font-size: 1.2rem;
 }
 
 .author-link {
@@ -256,8 +258,26 @@ article h1 {
 }
 
 article h1 a ,
-.tag {
+.tag,
+.article-text {
 	color: #333;
+}
+
+section {
+	padding: 20px;
+}
+
+.article-left-side {
+	padding-top: 20px;
+}
+
+.article-right-side {
+	margin-top: 30px;
+}
+
+.article-text {
+	margin-top: 20px;
+	line-height: 1.5;
 }
 
 
