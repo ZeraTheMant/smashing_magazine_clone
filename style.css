@@ -205,25 +205,41 @@ input:focus {
 	display: none;
 }
 
-.article-author {
+.article-author-img-big,
+.article-author-img-small {
 	transform: rotate(-20deg);
 	border-radius: 10px;
-	border: 5px solid #d33a2c;
-	height: 130px;
 	cursor: pointer;
 }
 
-.article-author:hover {
+.article-author-img-big {
+	border: 5px solid #d33a2c;
+	height: 150px;
+}
+
+.article-author-img-small {
+	border: 3px solid #d33a2c;
+	height: 120px;
+}
+
+.article-author-img-big:hover,
+.article-author-img-small:hover {
 	transform: initial;
-	transition: 0.3s
+	transition: 0.3s;
 }
 
 article img {
 	margin-left: 20px;
 }
 
+
+
 #top-section article:first-child {
 	margin-top: 0;
+}
+
+#top-section article:not(:first-child) {
+	margin-top: 40px;
 }
 
 .wrote {
@@ -247,14 +263,26 @@ article img {
 	font-family: mijaBold;
 }
 
-.author-link {
+.author-link,
+.continue-link {
 	color: #d33a2c;
+}
+
+.continue {
+	margin-top: 20px;
 }
 
 article h1 {
 	font-family: mijaBold;
-	font-size: 2.5rem;
 	margin: 15px 0 10px 0;
+}
+
+.big-header {
+	font-size: 2.3rem;
+}
+
+.lesser-header {
+	font-size: 1.8rem;
 }
 
 article h1 a ,
@@ -272,13 +300,17 @@ section {
 }
 
 .article-right-side {
-	margin-top: 30px;
+	margin-top: 10px;
 }
 
 .article-text {
 	margin-top: 20px;
 	line-height: 1.5;
 }
+
+
+
+
 
 
 @media screen and (min-width: 500px) {
@@ -293,9 +325,36 @@ section {
 }
 
 @media screen and (min-width: 680px) {
+	.article-author-img-big,
+	.article-author-img-small {
+		position: absolute;
+		top: 20%;
+	}
+	
+	.article-left-side {
+		background: blue;
+	}
+
+	.article-divider,
+	#top-section {
+		display: grid;
+	}
+	
+	.article-divider {
+		grid-template-columns: 1fr 3fr;	
+	}
+	
+	#top-section {
+		grid-template-columns: 1.8fr 1fr;	
+	}
+
 	#top-section article:first-child {
 		margin-top: 70px;
 		background: white;
+	}
+	
+	.article-right-side {
+		margin-top: 30px;
 	}
 
 	#menu-2 {
