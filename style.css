@@ -424,16 +424,73 @@ section {
 	text-decoration: underline;
 }
 
+.guide h2 {
+    margin-top: 5px;
+}
+
 #left-guide h2 a {
-	color: #19a972;
+    color: #19a972;    
+}
+
+#middle-guide h2 a {
+    color: rgb(255, 90, 0);
+}
+
+#right-guide h2 a {
+    color: rgb(170, 25, 148);
 }
 
 #left-guide-btn {
 	background: #19a972;
 }
 
-#guides-section {
+#middle-guide-btn {
+	background: rgb(255, 90, 0);
+}
+
+#right-guide-btn {
+	background: rgb(170, 25, 148);
+}
+
+.guide-btn {
+    border: 0;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-family: mijaBold;
+}
+
+#guides-container {
 	display: block;
+}
+
+.guide .guide-text {
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+#guides-section .guide:not(:first-child) {
+    margin-top: 30px;
+}
+
+.guide {
+    border-radius: 10px;
+    padding: 30px;
+}
+
+#see-guides-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#see-guides-link a {
+    font-family: Georgia;
+    font-size: 0.8rem;
+    color: #666;
+    border-bottom: 7px solid rgb(255, 90, 0);
+    padding: 5px;
 }
 
 
@@ -450,6 +507,10 @@ section {
 }
 
 @media screen and (min-width: 680px) {	
+    #guides-section .guide:not(:first-child) {
+        margin-top: 0;
+    }
+
 	#promo-text-box {
 		width: 110%;
 		padding: 15px 35px 15px 15px;
@@ -513,10 +574,11 @@ section {
 		margin-left: 0px;
 	}
 	
-	#guides-section {
+    #guides-container {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-	}
+        grid-gap: 20px;        
+    }
 }
 
 @media screen and (min-width: 780px) {
@@ -577,6 +639,14 @@ section {
 	#promo {
 		top: 138px;
 	}
+    
+	#guides-section {
+        margin-top: 300px;
+	}
+    
+    #guides-container {
+ 		grid-template-columns: 1fr 1fr 1fr;       
+    }
 }
 
 

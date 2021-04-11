@@ -54,7 +54,7 @@ function setBelowPromoMargin() {
         const heightNo = Number(height.slice(0, -2));
         guidesSection.style.marginTop = (heightNo - 100) + "px";                    
     } else {
-        guidesSection.style.marginTop = "0";
+        guidesSection.style.marginTop = "30px";
     }
 }
 
