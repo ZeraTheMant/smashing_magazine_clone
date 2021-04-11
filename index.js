@@ -48,6 +48,16 @@ const navBtn = {
 	}
 }
 
+function setBelowPromoMargin() {
+    if (window.innerWidth < 1200) {
+        const height = promoStyle.getPropertyValue("height");
+        const heightNo = Number(height.slice(0, -2));
+        guidesSection.style.marginTop = (heightNo - 100) + "px";                    
+    } else {
+        guidesSection.style.marginTop = "0";
+    }
+}
+
 
 navBtn.domElement.addEventListener('click', navBtn.toggleEvent);
 window.addEventListener('resize', navBtn.screenResizeSetup);
@@ -60,3 +70,11 @@ promoTextBox.addEventListener("keyup", function() {
 		promoTextBox.style.fontStyle = "initial";	
 	}
 });
+
+window.addEventListener('resize', setBelowPromoMargin);
+
+
+const promo = document.querySelector("#promo");
+const guidesSection = document.querySelector("#guides-section");
+const promoStyle = window.getComputedStyle(promo)
+setBelowPromoMargin();
