@@ -152,7 +152,7 @@ nav input:focus {
 	box-shadow: 5px 10px 8px 10px #888888;
 }
 
-#desktop-options:before {
+/*#desktop-options:before {
     content: "";
     width: 0px;
     height: 0px;
@@ -174,7 +174,7 @@ nav input:focus {
     border-right: 30px solid blue; 
 	top: -10px;
 	transform: scaleX(-1);
-}
+}*/
 
 #desktop-options ul li a {
 	color: #d33a2c;
