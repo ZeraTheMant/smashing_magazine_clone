@@ -48,6 +48,16 @@ const navBtn = {
 	}
 }
 
+function setBelowPromoMargin() {
+    if (window.innerWidth < 1200) {
+        const height = promoStyle.getPropertyValue("height");
+        const heightNo = Number(height.slice(0, -2));
+        guidesSection.style.marginTop = (heightNo - 100) + "px";                    
+    } else {
+        guidesSection.style.marginTop = "30px";
+    }
+}
+
 
 navBtn.domElement.addEventListener('click', navBtn.toggleEvent);
 window.addEventListener('resize', navBtn.screenResizeSetup);
@@ -61,3 +71,13 @@ promoTextBox.addEventListener("keyup", function() {
 	}
 });
 
+<<<<<<< HEAD
+=======
+window.addEventListener('resize', setBelowPromoMargin);
+
+
+const promo = document.querySelector("#promo");
+const guidesSection = document.querySelector("#guides-section");
+const promoStyle = window.getComputedStyle(promo)
+setBelowPromoMargin();
+>>>>>>> c0b8b1f2bdc1b78f0fff0de43d7a4f51fe20c59f
