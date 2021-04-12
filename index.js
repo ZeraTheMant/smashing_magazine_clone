@@ -73,7 +73,6 @@ promoTextBox.addEventListener("keyup", function() {
 
 window.addEventListener('resize', setBelowPromoMargin);
 
-
 const promo = document.querySelector("#promo");
 const guidesSection = document.querySelector("#guides-section");
 const promoStyle = window.getComputedStyle(promo)

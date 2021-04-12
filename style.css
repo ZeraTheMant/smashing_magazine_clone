@@ -611,12 +611,6 @@ section {
 	padding-left: 10px;
 }
 
-
-
-#community-section {
-
-}
-
 #community-posts {
 	margin-top: 50px;
 }
@@ -625,6 +619,59 @@ section {
 	color: grey;
 }
 
+footer {
+	background: #d33a2c;
+	color: white;
+	margin-top: 70px;
+	font-family: Georgia;
+	padding: 50px 30px 30px 30px;
+}
+
+#footer-header {
+	font-weight: bold;
+	font-size: 0.9rem;
+}
+
+footer ul li a {
+	color: white;
+	font-size: 0.9rem;
+
+}
+
+#footer-credits {
+	line-height: 1.5;
+	font-size: 0.9rem;
+}
+
+#footer-credits a {
+	color: white;
+	text-decoration: underline;
+}
+
+.centered {
+	text-align: center;
+}
+
+footer ul li a:hover {
+	color: rgb(57, 26, 31);
+	transition: 0.3s;
+}
+
+footer ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 80%;
+	margin: 40px auto 60px auto;
+	grid-gap: 20px;
+}
+
+footer ul li::before {
+	content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+	color: rgb(57, 26, 31); /* Change the color */
+	font-weight: bold; /* If you want it to be bold */
+	display: inline-block; /* Needed to add space between the bullet and the text */
+	width: 1em; /* Also needed for space (tweak if needed) */
+ }
 
 
 @media screen and (min-width: 500px) {
@@ -636,9 +683,23 @@ section {
 	#nav-divider {
 		gap: 20px;
 	}
+
+}
+
+@media screen and (min-width: 600px) {
+	#footer-header {
+		text-align: center;
+	}
+}
+
+@media screen and (min-width: 640px) {
+	footer ul {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
 }
 
 @media screen and (min-width: 680px) {	
+
     #guides-section .guide:not(:first-child) {
         margin-top: 0;
     }
@@ -726,6 +787,22 @@ section {
 	#desktop-guides {
 		display: none;
 	}	
+	
+	footer ul {
+		display: block;
+		text-align: center;
+		width: 85%;
+		line-height: 1.9;
+	}
+	
+	footer ul li {
+		display: inline;
+		white-space: nowrap;
+	}
+	
+	footer ul li a {
+		font-size: 1.2rem;
+	}
 }
 
 @media screen and (min-width: 880px) {
