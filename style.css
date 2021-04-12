@@ -490,12 +490,12 @@ section {
     padding: 30px;
 }
 
-#see-guides-link {
+.see-link {
     text-align: center;
     margin-top: 20px;
 }
 
-#see-guides-link a {
+.see-link a {
     font-family: Georgia;
     font-size: 0.8rem;
     color: #666;
@@ -521,13 +521,8 @@ section {
 }
 
 .vertical-text {
-	writing-mode: vertical-rl;
-	text-orientation: mixed;
-	font-weight: bold;
-	position: absolute;
-	top: 0;
-	left: 75px;
 	font-size: 0.9rem;
+	font-weight: bold;	
 }
 
 .long-line {
@@ -538,7 +533,17 @@ section {
 	padding: 10px;
 }
 
+#workshop-section {
+	background: rgb(27, 113, 187);
+	padding: 0;
+	margin-top: 70px;
+}
 
+#workshop-img {
+	width: 90%;
+	margin: auto;
+	display: block;
+}
 
 
 @media screen and (min-width: 500px) {
@@ -710,6 +715,18 @@ section {
     #guides-container{
  		grid-template-columns: 1fr 1fr 1fr;       
     }
+	
+	.vertical-text {
+		writing-mode: vertical-rl;
+		text-orientation: mixed;
+		position: absolute;
+		top: 0;
+		left: 75px;
+	}
+	
+	#workshop-img {
+		width: 60%;
+	}
 }
 
 
