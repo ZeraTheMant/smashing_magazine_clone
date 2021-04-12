@@ -643,7 +643,14 @@ footer ul li a {
 	font-size: 0.9rem;
 }
 
-#footer-credits a {
+#footer-links {
+	margin-top: 20px;
+	font-size: 0.9rem;
+	line-height: 2.2;
+}
+
+#footer-credits a,
+#footer-links a {
 	color: white;
 	text-decoration: underline;
 }
