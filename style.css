@@ -509,13 +509,35 @@ section {
 
 #latest-posts {
 	display: grid;
-	margin-top: 50px;
 	grid-gap: 20px;
+}
+
+#latest-posts-container {
+	margin-top: 50px;
 }
 
 #latest-posts > div:not(:first-child) {
 	margin-top: 30px;
 }
+
+.vertical-text {
+	writing-mode: vertical-rl;
+	text-orientation: mixed;
+	font-weight: bold;
+	position: absolute;
+	top: 0;
+	left: 75px;
+	font-size: 0.9rem;
+}
+
+.long-line {
+	letter-spacing: -4px;;
+}
+
+#latest-posts {
+	padding: 10px;
+}
+
 
 
 
@@ -574,9 +596,12 @@ section {
 	}
 	
 	#top-section,
-	#guides-section,
-	#latest-posts {
+	#guides-section {
 		padding: 0 70px;
+	}
+	
+	#latest-posts {
+		padding: 0 90px;
 	}
 
 	#menu-2 {
@@ -628,6 +653,9 @@ section {
 	#latest-posts {
 		grid-template-columns: 1fr 1fr;
         grid-gap: 50px 30px;  	
+	}
+	
+	#latest-posts-container {
 		margin-top: 100px;
 	}
 	
