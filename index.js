@@ -54,7 +54,7 @@ function setBelowPromoMargin() {
         const heightNo = Number(height.slice(0, -2));
         guidesSection.style.marginTop = (heightNo - 100) + "px";                    
     } else {
-        guidesSection.style.marginTop = "30px";
+        guidesSection.style.marginTop = "80px";
     }
 }
 
@@ -71,8 +71,6 @@ promoTextBox.addEventListener("keyup", function() {
 	}
 });
 
-<<<<<<< HEAD
-=======
 window.addEventListener('resize', setBelowPromoMargin);
 
 
@@ -80,4 +78,3 @@ const promo = document.querySelector("#promo");
 const guidesSection = document.querySelector("#guides-section");
 const promoStyle = window.getComputedStyle(promo)
 setBelowPromoMargin();
->>>>>>> c0b8b1f2bdc1b78f0fff0de43d7a4f51fe20c59f

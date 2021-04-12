@@ -209,7 +209,8 @@ nav input:focus {
 }
 
 .article-author-img-big,
-.article-author-img-small {
+.article-author-img-small,
+.article-author-img-smallest {
 	transform: rotate(-20deg);
 	border-radius: 10px;
 	cursor: pointer;
@@ -225,13 +226,19 @@ nav input:focus {
 	height: 120px;
 }
 
+.article-author-img-smallest {
+	border: 3px solid #d33a2c;
+	height: 100px;
+}
+
 .article-author-img-big:hover,
-.article-author-img-small:hover {
+.article-author-img-small:hover,
+.article-author-img-smallest:hover {
 	transform: initial;
 	transition: 0.3s;
 }
 
-article img {
+.article-divider img {
 	margin-left: 20px;
 }
 
@@ -273,7 +280,7 @@ article img {
 	margin-top: 20px;
 }
 
-article h1 {
+.article-divider h1 {
 	font-family: mijaBold;
 	margin: 15px 0 10px 0;
 }
@@ -286,7 +293,7 @@ article h1 {
 	font-size: 1.8rem;
 }
 
-article h1 a ,
+.article-divider h1 a ,
 .tag,
 .article-text {
 	color: #333;
@@ -333,7 +340,8 @@ section {
 	font-size: 1.1rem;
 }
 
-#promo-info a {
+#promo-info a,
+#latest-posts .article-text a {
 	color: #006fc6;
 	text-decoration: underline;
 	font-weight: bold;
@@ -466,11 +474,7 @@ section {
 	display: block;
 }
 
-<<<<<<< HEAD
-#top-section {
-	background: red;
-}
-=======
+
 .guide .guide-text {
     margin: 20px 0;
     line-height: 1.5;
@@ -499,7 +503,7 @@ section {
 }
 
 
->>>>>>> c0b8b1f2bdc1b78f0fff0de43d7a4f51fe20c59f
+
 
 @media screen and (min-width: 500px) {
 	#nav-btn {
@@ -556,7 +560,8 @@ section {
 	}
 	
 	#top-section,
-	#guides-section	{
+	#guides-section,
+	#latest-posts {
 		padding: 0 70px;
 	}
 
