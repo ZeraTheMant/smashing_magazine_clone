@@ -209,11 +209,17 @@ nav input:focus {
 }
 
 .article-author-img-big,
+.article-author-img-biggest,
 .article-author-img-small,
 .article-author-img-smallest {
 	transform: rotate(-20deg);
 	border-radius: 10px;
 	cursor: pointer;
+}
+
+.article-author-img-biggest {
+	border: 5px solid #d33a2c;
+	height: 180px;
 }
 
 .article-author-img-big {
@@ -232,6 +238,7 @@ nav input:focus {
 }
 
 .article-author-img-big:hover,
+.article-author-img-biggest:hover,
 .article-author-img-small:hover,
 .article-author-img-smallest:hover {
 	transform: initial;
@@ -272,7 +279,8 @@ nav input:focus {
 }
 
 .author-link,
-.continue-link {
+.continue-link,
+#community-posts .author-link {
 	color: #d33a2c;
 }
 
@@ -290,10 +298,16 @@ nav input:focus {
 }
 
 .lesser-header,
-#latest-posts .big-header {
+#latest-posts .big-header,
+#community-posts .big-header {
 	font-size: 1.8rem;
 }
 
+#community-posts .article-divider h1 a  {
+	text-decoration: none;
+}
+
+#community-posts .article-divider h1 a ,
 .article-divider h1 a ,
 .tag,
 .article-text {
@@ -310,7 +324,7 @@ section {
 
 .article-text {
 	margin-top: 20px;
-	line-height: 1.5;
+	line-height: 1.8;
 }
 
 .article-right-side {
@@ -342,6 +356,7 @@ section {
 }
 
 #promo-info a,
+#community-section a,
 #latest-posts .article-text a {
 	color: #006fc6;
 	text-decoration: underline;
@@ -507,11 +522,18 @@ section {
     padding: 5px;
 }
 
+#community-section .see-link a {
+	color: #666;
+	text-decoration: none;
+	font-weight: normal;
+}
+
 #latest-posts .article-text {
 	margin-bottom: 20px;
 }
 
-#latest-posts {
+#latest-posts,
+#community-posts {
 	display: grid;
 	grid-gap: 20px;
 }
@@ -530,10 +552,12 @@ section {
 }
 
 .long-line {
-	letter-spacing: -4px;;
+	letter-spacing: -4px;
+	z-index: 3;
 }
 
-#latest-posts {
+#latest-posts,
+#community-posts {
 	padding: 10px;
 }
 
@@ -542,6 +566,7 @@ section {
 	padding: 60px 0 0 0;
 	margin-top: 70px;
 	text-align: center;
+	z-index: 1;
 }
 
 #workshop-section h1 a {
@@ -579,6 +604,25 @@ section {
 
 .white {
 	color: white;
+}
+
+#featured-container {
+	margin-top: 50px;
+	padding-left: 10px;
+}
+
+
+
+#community-section {
+
+}
+
+#community-posts {
+	margin-top: 50px;
+}
+
+#community-section h4 {
+	color: grey;
 }
 
 
@@ -642,7 +686,8 @@ section {
 		padding: 0 70px;
 	}
 	
-	#latest-posts {
+	#latest-posts,
+	#community-section {
 		padding: 0 90px;
 	}
 
@@ -692,7 +737,8 @@ section {
 		display: none;
 	}
 	
-	#latest-posts {
+	#latest-posts,
+    #community-posts {
 		grid-template-columns: 1fr 1fr;
         grid-gap: 50px 30px;  	
 	}
