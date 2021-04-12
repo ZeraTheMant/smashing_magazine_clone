@@ -436,7 +436,9 @@ section {
 	display: block;
 }
 
-
+#top-section {
+	background: red;
+}
 
 @media screen and (min-width: 500px) {
 	#nav-btn {

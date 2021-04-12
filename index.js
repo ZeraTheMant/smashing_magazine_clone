@@ -60,3 +60,4 @@ promoTextBox.addEventListener("keyup", function() {
 		promoTextBox.style.fontStyle = "initial";	
 	}
 });
+
